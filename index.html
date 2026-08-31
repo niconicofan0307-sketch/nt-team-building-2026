@@ -87,7 +87,81 @@
   .banner p{color:#dce7f5; font-size:14px;}
 
   footer{color:var(--gray); font-size:12.5px; text-align:center; padding-top:10px; line-height:1.8;}
-  @media(max-width:720px){ section{padding:20px 16px;} th,td{font-size:12.5px; padding:6px 6px;} h1{font-size:23px;} }
+
+  /* ===== 表格滚动容器（JS 自动包装；桌面端无影响） ===== */
+  .tbl-scroll{width:100%;}
+  .tbl-scroll .hint{display:none;}
+
+  /* ===== 响应式：平板（≤900px） ===== */
+  @media(max-width:900px){
+    .wrap{padding:0 14px 60px;}
+    header{padding:34px 0 28px; margin-bottom:24px;}
+    header .inner{padding:0 14px;}
+    section{padding:22px 16px;}
+    h1{font-size:24px;}
+    .sub{font-size:13px;}
+    .banner{padding:18px 16px;}
+    .gallery figure{flex:1 1 44%; min-width:0;}
+    .gallery img{height:112px;}
+    .pricebox .big{font-size:20px;}
+  }
+
+  /* ===== 响应式：手机（≤640px） ===== */
+  @media(max-width:640px){
+    .wrap{padding:0 10px 50px;}
+    header{padding:28px 0 22px; margin-bottom:20px;}
+    header .inner{padding:0 12px;}
+    .brand{font-size:11.5px; letter-spacing:1px; gap:8px;}
+    h1{font-size:20px; letter-spacing:.5px;}
+    .sub{font-size:12.5px; line-height:1.6;}
+    .meta-bar{gap:7px; margin-top:16px;}
+    .meta-bar span{font-size:11.5px; padding:4px 9px;}
+
+    /* 导航单行横向滑动 */
+    nav .inner{flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; padding:8px 10px; scrollbar-width:none;}
+    nav .inner::-webkit-scrollbar{display:none;}
+    nav a{font-size:12.5px; padding:5px 10px; flex-shrink:0;}
+
+    section{border-radius:10px; padding:18px 14px; margin-bottom:16px;}
+    h2{font-size:17px; gap:8px;}
+    h2 .no{width:24px; height:24px; font-size:12px; border-radius:7px;}
+    h3{font-size:15px; margin:18px 0 8px;}
+    .lead{font-size:13px;}
+
+    /* 图集 2 列 */
+    .gallery{gap:10px;}
+    .gallery figure{flex:1 1 46%; min-width:0;}
+    .gallery img{height:98px;}
+    .gallery figcaption{font-size:11px; padding:5px 6px;}
+
+    /* 普通表格（总览/行程）→ 卡片式 */
+    .tbl-scroll table{display:block; border-collapse:separate; border-spacing:0; margin:10px 0 4px;}
+    .tbl-scroll thead{display:none;}
+    .tbl-scroll table tr{display:block; border:1px solid var(--line); border-radius:10px; margin:0 0 10px; padding:10px 12px; background:#fff; box-shadow:0 1px 2px rgba(15,42,74,.04);}
+    .tbl-scroll table tr:nth-child(even){background:#fafcfe;}
+    .tbl-scroll table td{display:block; border:none; padding:3px 0; font-size:13px; white-space:normal;}
+    .tbl-scroll table td.d{font-size:14px; padding-bottom:5px; white-space:normal; display:flex; align-items:center; gap:6px;}
+    .tbl-scroll table td.d::after{content:""; flex:1; height:1px; background:var(--line);}
+    .tbl-scroll table td:nth-child(3)::before{content:"交通："; font-weight:600; color:var(--navy);}
+    .tbl-scroll table td:nth-child(4)::before{content:"住宿："; font-weight:600; color:var(--navy);}
+
+    /* 对比表（五线对比/结论）→ 横向滑动 */
+    .tbl-scroll.cmp-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; margin:12px 0 6px; padding-bottom:4px;}
+    .tbl-scroll.cmp-wrap table{display:table; min-width:720px; margin:0;}
+    .tbl-scroll.cmp-wrap .hint{display:block; font-size:11.5px; color:var(--gray); margin-bottom:6px;}
+    .tbl-scroll.cmp-wrap::-webkit-scrollbar{height:5px;}
+    .tbl-scroll.cmp-wrap::-webkit-scrollbar-thumb{background:#c6d2e0; border-radius:3px;}
+    .tbl-scroll.cmp-wrap::-webkit-scrollbar-track{background:#f0f3f7;}
+
+    .pricebox{padding:12px 14px; gap:6px 16px;}
+    .pricebox .inc{font-size:12px;}
+    .risk,.note{padding:12px 14px; font-size:12.5px;}
+    .risk ul{margin:6px 0 0 14px;}
+    .risk li,.note li{font-size:12.5px;}
+    ul.clean li{font-size:12.5px;}
+    .banner h2{font-size:17px;}
+    .banner p{font-size:13px;}
+  }
 </style>
 </head>
 <body data-page-node-id="PuHvsxBE9a8ZEuasGxqDNt">
@@ -639,6 +713,27 @@
   报价为预估价，实际以航空公司、酒店与旅行社当期报价为准
 </footer>
 
+<script>
+/* 表格响应式：普通表手机端转卡片，对比表手机端横向滑动 */
+(function(){
+  var TABLES=document.querySelectorAll('table');
+  for(var i=0;i<TABLES.length;i++){
+    var t=TABLES[i];
+    if(t.parentNode && t.parentNode.classList.contains('tbl-scroll')) continue;
+    var isCmp=t.classList.contains('cmp');
+    var wrap=document.createElement('div');
+    wrap.className='tbl-scroll'+(isCmp?' cmp-wrap':'');
+    if(isCmp){
+      var hint=document.createElement('div');
+      hint.className='hint';
+      hint.textContent='→ 左右滑动查看完整对比表';
+      wrap.appendChild(hint);
+    }
+    t.parentNode.insertBefore(wrap,t);
+    wrap.appendChild(t);
+  }
+})();
+</script>
 </div>
 </body>
 </html>
