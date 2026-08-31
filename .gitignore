@@ -1,0 +1,5 @@
+.DS_Store
+.workbuddy/
+fetch_images.py
+*.pyc
+__pycache__/
