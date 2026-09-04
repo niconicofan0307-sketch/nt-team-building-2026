@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="hNOucOIqrLJIUd6SHasG47">
+<head data-page-node-id="8jHZ8DGVF0pXyR2StirdJl">
+<meta charset="UTF-8" data-page-node-id="K1xHMmYglG7MbKsXgCYIu6">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="zNWZcACzK5L5bKi9LOMHWp">
+<title>NT 2026 秋季团建 · 多彩山西 6 天 5 晚 — 员工手册</title>
+<style>
+  :root{
+    --navy:#1F4E79;      /* 深蓝 主色 */
+    --blue:#2E75B6;      /* 中蓝 */
+    --sky:#DDEBF7;       /* 浅蓝底 */
+    --gold:#B8860B;      /* 金色点缀 */
+    --gold-bg:#FAF3E3;
+    --ink:#22303E;
+    --gray:#5B6B7C;
+    --line:#D6E4F0;
+    --red:#9C0006;
+    --white:#FFFFFF;
+    --card:#FFFFFF;
+    --shadow:0 2px 10px rgba(31,78,121,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:var(--ink);background:#F4F8FC;line-height:1.65;font-size:15px}
+  .wrap{max-width:980px;margin:0 auto;padding:0 18px 40px}
+
+  /* ---------- Hero ---------- */
+  .hero{background:linear-gradient(135deg,#1F4E79 0%,#2E75B6 70%,#3B82C4 100%);color:#fff;padding:38px 22px 30px;text-align:center}
+  .hero .co{font-size:12.5px;letter-spacing:3px;color:#DCE9F7;font-weight:600}
+  .hero h1{font-size:30px;margin:8px 0 4px;letter-spacing:1px}
+  .hero .en{font-size:12px;color:#BFD8EE;letter-spacing:1px}
+  .hero .sub{margin-top:14px;font-size:13.5px;color:#EAF2FB}
+  .hero .chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
+  .hero .chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);border-radius:20px;padding:3px 14px;font-size:12.5px}
+  .hero .chip b{color:#FFD98A}
+
+  /* ---------- Nav ---------- */
+  nav{position:sticky;top:0;z-index:9;background:var(--navy);display:flex;justify-content:center;flex-wrap:wrap;gap:2px;padding:0 8px;box-shadow:0 2px 6px rgba(0,0,0,.12)}
+  nav a{color:#DCE9F7;text-decoration:none;font-size:13.5px;padding:10px 16px;border-bottom:3px solid transparent}
+  nav a:hover{color:#fff;border-bottom-color:var(--gold)}
+
+  /* ---------- Section ---------- */
+  section{background:var(--card);border-radius:12px;box-shadow:var(--shadow);padding:24px 26px;margin-top:22px}
+  .sec-head{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+  .sec-no{background:var(--navy);color:#fff;font-weight:700;font-size:13px;border-radius:6px;padding:2px 9px;flex:none}
+  .sec-head h2{font-size:20px;color:var(--navy)}
+  .sec-head .tip{margin-left:auto;font-size:12px;color:var(--gray)}
+
+  /* ---------- 行程总览 mini ---------- */
+  .mini{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:6px}
+  .mini th{background:var(--sky);color:var(--navy);padding:7px 6px;font-weight:600;border:1px solid var(--line)}
+  .mini td{border:1px solid var(--line);padding:6px;text-align:center}
+  .mini .d{font-weight:700;color:var(--navy)}
+  .mini .stay{background:var(--gold-bg)}
+
+  /* ---------- Day cards ---------- */
+  .day{border:1px solid var(--line);border-radius:10px;margin-top:14px;overflow:hidden}
+  .dpic{height:200px;overflow:hidden;line-height:0;border-bottom:3px solid var(--gold)}
+  .dpic img{width:100%;height:100%;object-fit:cover;display:block}
+  .tbd{color:#98A4B0;font-size:12px;margin-left:4px;white-space:nowrap}
+  .fee .full{grid-column:1/-1}
+  .feecard.reim{background:#FFFDF4;border:2px solid var(--gold)}
+  .feecard.reim h4{color:#7A5B00}
+  .feecard.reim li::before{content:"✔";color:var(--gold)}
+  .day-head{display:flex;align-items:center;gap:12px;background:linear-gradient(90deg,#1F4E79,#2E75B6);color:#fff;padding:10px 16px}
+  .day-head .date{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.4);border-radius:8px;padding:2px 10px;font-size:13px;font-weight:700;white-space:nowrap}
+  .day-head .t1{font-size:16.5px;font-weight:700}
+  .day-head .t2{font-size:12.5px;color:#DCE9F7;margin-left:auto;text-align:right}
+  .day-body{padding:10px 16px 12px}
+  .row{display:flex;gap:8px;padding:5px 0;border-bottom:1px dashed #EDF3F9;font-size:14px}
+  .row:last-child{border-bottom:none}
+  .row .tm{flex:none;width:76px;color:var(--blue);font-weight:600;font-size:13px;padding-top:1px}
+  .row .k{flex:none;color:var(--gray);font-size:12.5px;width:auto;min-width:46px;background:var(--sky);border-radius:4px;text-align:center;height:22px;line-height:22px;margin-top:2px}
+  .row .v{flex:1}
+  .row .v b{color:var(--navy)}
+  .tag-gold{background:var(--gold-bg);color:#7A5B00;border-radius:4px;padding:0 7px;font-size:12.5px}
+  .meals{margin-top:6px;font-size:12.5px;color:var(--gray)}
+
+  /* ---------- 天气 ---------- */
+  .weather-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .wcard{border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  .wcard .city{background:var(--sky);color:var(--navy);font-weight:700;text-align:center;padding:6px;font-size:14px}
+  .wcard .temp{text-align:center;padding:10px 6px;font-size:13px}
+  .wcard .temp b{display:block;font-size:19px;color:var(--navy);margin-bottom:2px}
+  .wcard .temp span{color:var(--gray)}
+  .wcard .note{background:var(--gold-bg);color:#7A5B00;font-size:12px;text-align:center;padding:5px;line-height:1.5}
+  .layer{border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-top:12px}
+  .layer h4{font-size:14.5px;color:var(--navy);margin-bottom:6px}
+  .layer ul{padding-left:18px;font-size:13.5px}
+  .layer li{margin:3px 0}
+
+  /* ---------- 清单 ---------- */
+  .list-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  .lcard{border:1px solid var(--line);border-radius:10px;padding:12px 16px}
+  .lcard h4{font-size:15px;color:var(--navy);margin-bottom:8px;border-bottom:2px solid var(--gold);padding-bottom:5px;display:inline-block}
+  .lcard ul{list-style:none}
+  .lcard li{font-size:13.5px;padding:4px 0 4px 22px;position:relative}
+  .lcard li::before{content:"";position:absolute;left:2px;top:10px;width:12px;height:12px;border:1.5px solid var(--blue);border-radius:3px}
+  .lcard li b{color:var(--ink)}
+  .must::after{content:"必带";font-size:10px;color:var(--red);border:1px solid var(--red);border-radius:3px;padding:0 4px;margin-left:6px;vertical-align:1px}
+
+  /* ---------- 注意事项 ---------- */
+  .tips{counter-reset:tips;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .tip{border:1px solid var(--line);border-radius:10px;padding:12px 16px 12px 14px;background:#FBFDFF}
+  .tip h4{font-size:14.5px;color:var(--navy);margin-bottom:5px}
+  .tip h4::before{counter-increment:tips;content:counter(tips);display:inline-block;background:var(--navy);color:#fff;width:20px;height:20px;border-radius:50%;text-align:center;line-height:20px;font-size:11.5px;margin-right:7px}
+  .tip p,.tip li{font-size:13.5px;color:#33465A}
+  .tip ul{padding-left:17px}
+  .hot{border:2px solid var(--gold);background:var(--gold-bg)}
+  .hot h4{color:#7A5B00}
+  .hot h4::before{background:var(--gold)}
+
+  /* ---------- 费用 ---------- */
+  .fee{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .feecard{border-radius:10px;padding:14px 18px;font-size:13.5px}
+  .fee .inc{background:var(--sky);border:1px solid #BBD6EC}
+  .fee .self{background:var(--gold-bg);border:1px solid #E8D5A8}
+  .feecard h4{font-size:15px;margin-bottom:8px}
+  .fee .inc h4{color:var(--navy)}
+  .fee .self h4{color:#7A5B00}
+  .feecard ul{list-style:none}
+  .feecard li{padding:4px 0 4px 24px;position:relative}
+  .fee .inc li::before{content:"✔";position:absolute;left:2px;color:var(--blue);font-weight:700}
+  .fee .self li::before{content:"¥";position:absolute;left:2px;color:#7A5B00;font-weight:700}
+  .fee .self b{color:var(--red)}
+
+  footer{text-align:center;color:var(--gray);font-size:12.5px;padding:24px 0 10px;line-height:2}
+
+  @media (max-width:760px){
+    .hero{padding:22px 16px 24px}
+    .hero h1{font-size:22px}
+    .hero .sub{font-size:12.5px}
+    .hero .chip{font-size:11.5px;padding:3px 10px}
+    nav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:0 6px}
+    nav a{font-size:12.5px;padding:9px 12px;flex:none}
+    nav a:last-child{padding-right:14px}
+    section{padding:18px 16px;margin-top:16px}
+    .sec-head h2{font-size:18px}
+    .weather-grid,.list-grid,.tips,.fee{grid-template-columns:1fr}
+    .row{font-size:13.5px}
+    .row .tm{width:60px;font-size:12.5px}
+    .row .k{font-size:12px;min-width:42px;height:20px;line-height:20px}
+    .mini{font-size:12px}
+    .mini th,.mini td{padding:5px 4px}
+    .day-head{padding:9px 12px;gap:8px;flex-wrap:wrap}
+    .day-head .t1{font-size:15.5px}
+    .day-head .t2{font-size:12px;margin-left:0;width:100%;text-align:left}
+    .day-body{padding:10px 12px 12px}
+    .meals{font-size:12px}
+    .flight-card{grid-template-columns:1fr!important;padding:12px 14px!important}
+    .flight-card .leg{margin-bottom:4px}
+    .pic3{grid-template-columns:repeat(2,1fr)!important;gap:6px!important}
+    .pic3 .pcaption{font-size:11.5px}
+    .dpic{height:160px}
+    .tip h4{font-size:14px}
+    .feecard{padding:12px 14px;font-size:13px}
+  }
+  @media (max-width:420px){
+    .hero h1{font-size:20px}
+    .hero .co{font-size:11.5px;letter-spacing:1.5px}
+    .hero .sub{font-size:12px}
+    .hero .chip{font-size:11px;padding:2px 9px}
+    .row{display:block;padding:6px 0}
+    .row .tm{display:inline-block;width:auto;background:var(--sky);color:var(--blue);border-radius:4px;padding:1px 8px;margin-right:6px;font-size:12px}
+    .row .k{display:inline-block;margin-right:6px;margin-top:0}
+    .row .v{display:block;margin-top:4px;font-size:13.5px;line-height:1.55}
+    .mini{font-size:11.5px}
+    .mini th,.mini td{padding:4px 3px}
+    .pic3{grid-template-columns:1fr!important}
+  }
+  .flight-card{background:linear-gradient(90deg,#1F4E79,#2E75B6);color:#fff;border-radius:12px;padding:14px 18px;margin:4px 0 16px;display:grid;grid-template-columns:1fr 1fr;gap:18px;box-shadow:0 4px 12px rgba(31,78,121,.18)}
+  .flight-card .leg{padding:4px 6px;border-right:1px dashed rgba(255,255,255,.25)}
+  .flight-card .leg:last-child{border-right:none}
+  .flight-card .leg-tag{font-size:12px;opacity:.85;letter-spacing:.5px;margin-bottom:3px}
+  .flight-card .leg-airline{font-size:13px;opacity:.95}
+  .flight-card .leg-no{font-size:24px;font-weight:700;letter-spacing:1px;margin:3px 0 5px;color:#FFE6A8}
+  .flight-card .leg-route{font-size:16.5px;font-weight:600;letter-spacing:.5px}
+  .flight-card .leg-ap{font-size:12px;opacity:.85;margin-top:4px}
+  .flight-card .arrow{opacity:.7;margin:0 3px}
+  .flight-card .leg-note{font-size:11.5px;opacity:.7;margin-top:4px}
+
+  .pic3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:6px}
+  .pic3 figure{margin:0;overflow:hidden;border-radius:8px;background:#EDF3F9;border:1px solid var(--line)}
+  .pic3 img{width:100%;height:140px;object-fit:cover;display:block}
+  .pic3 .pcaption{font-size:12px;color:var(--gray);text-align:center;padding:5px 4px;background:#FBFDFF;border-top:1px solid var(--line)}
+  .pic3 .pinfo{background:var(--sky);padding:14px 8px;color:var(--navy);font-size:13px;font-weight:600;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.5;min-height:140px}
+
+  @media print{nav{display:none}body{background:#fff}}
+</style>
+</head>
+<body data-page-node-id="ZAJDnQJDaTaUKkPW8wzVgV">
+
+<!-- ================= HERO ================= -->
+<header class="hero" data-page-node-id="OxI8cb6rxE57ADvIcdiGkz">
+  <div class="co" data-page-node-id="mk0ucLTlq5Hnek0msJ8pFn">NEW TIME · 2026 秋季团建</div>
+  <h1 data-page-node-id="peZvvghj4PGI8eYNyG5Q8t">多彩山西 · 6 天 5 晚</h1>
+  <div class="en" data-page-node-id="EXJt8cUsda13oxH4XjGQb0">SHANXI ANCIENT BUILDINGS &amp; NATURE TOUR — EMPLOYEE HANDBOOK</div>
+  <div class="sub" data-page-node-id="0P5Q6xlbUJCKWnEPGqvX4h">五台山 · 悬空寺 · 云冈石窟 · 应县木塔 · 乔家大院 · 平遥古城 · 晋祠</div>
+  <div class="chips" data-page-node-id="1qnNJkRU3rYvPSBipa8bkD">
+    <span class="chip" data-page-node-id="IIp4RoOv8YjYq6UOBV68g7">时间 <b data-page-node-id="jqab9Lty8RSmVPwA9cDEnM">9/11(五)—9/16(三)</b></span>
+    <span class="chip" data-page-node-id="dqWufd6EO3LaAGLtsNHrN5">人数 <b data-page-node-id="f3M9LKuEtwUQdnyEHtqDkz">21 人</b></span>
+    <span class="chip" data-page-node-id="PVMH6qFUcZjX9bkZqgEpBW">往返 <b data-page-node-id="pdwtHD1Suclz5XXBpDnMOi">上海虹桥 ✈ 太原</b></span>
+    <span class="chip" data-page-node-id="2HQxR1xWEPlhGgJFNnshCG">住宿 <b data-page-node-id="gU7AWppRaJoFN4iiZ6RHTD">4-5 钻酒店 ×5 晚</b></span>
+  </div>
+</header>
+
+<!-- ================= NAV ================= -->
+<nav data-page-node-id="fDxGWhjstXkbR2JAm0tBku">
+  <a href="#p1" data-page-node-id="WNupQsd68AtT87yYm0rlSH">行程计划</a>
+  <a href="#p2" data-page-node-id="WWMIfBa1jhNFf1v2qcg3Ex">天气与穿衣</a>
+  <a href="#p3" data-page-node-id="UEbxU4XaAM0XYZHdUeXQqE">携带物品</a>
+  <a href="#p4" data-page-node-id="cNshhNyaC4v2a4Ks6rcsXK">注意事项</a>
+  <a href="#p5" data-page-node-id="CUYiPZtsH6erqU2VMxAJ5O">费用说明</a>
+</nav>
+
+<div class="wrap" data-page-node-id="QyGsbIJr3slV4qnYfRSxoP">
+
+<!-- ================= P1 行程计划 ================= -->
+<section id="p1" data-page-node-id="KJOZei0fYK72DNxydSGdcF">
+  <div class="sec-head" data-page-node-id="SI7s7Gs9giARmOe9kggX8l"><span class="sec-no" data-page-node-id="jCBegFs4dxW6eXYonbnL7Z">01</span><h2 data-page-node-id="vneqLMlJGnRPb6CpfcFA7y">行程计划</h2><span class="tip" data-page-node-id="zMT1u9VZzYrPMr1TEicNcb">时刻为参考，具体集合时间以群内通知为准</span></div>
+
+  <div class="flight-card" data-page-node-id="flight-card">
+    <div class="leg" data-page-node-id="leg-go">
+      <div class="leg-tag" data-page-node-id="leg-go-tag">去程 · 9/11 周五</div>
+      <div class="leg-airline" data-page-node-id="leg-go-airline">吉祥航空</div>
+      <div class="leg-no" data-page-node-id="leg-go-no">HO1131</div>
+      <div class="leg-route" data-page-node-id="leg-go-route">18:30 <span class="arrow">→</span> 20:45</div>
+      <div class="leg-ap" data-page-node-id="leg-go-ap">虹桥 T2 <span class="arrow">→</span> 武宿 T2</div>
+      <div class="leg-note" data-page-node-id="leg-go-note">请提前 90 分钟到机场办理值机</div>
+    </div>
+    <div class="leg" data-page-node-id="leg-back">
+      <div class="leg-tag" data-page-node-id="leg-back-tag">返程 · 9/16 周三</div>
+      <div class="leg-airline" data-page-node-id="leg-back-airline">东方航空</div>
+      <div class="leg-no" data-page-node-id="leg-back-no">MU2410</div>
+      <div class="leg-route" data-page-node-id="leg-back-route">19:00 <span class="arrow">→</span> 21:15</div>
+      <div class="leg-ap" data-page-node-id="leg-back-ap">武宿 T2 <span class="arrow">→</span> 虹桥 T2</div>
+      <div class="leg-note" data-page-node-id="leg-back-note">东航提供机上餐食·无需自费</div>
+    </div>
+  </div>
+
+  <table class="mini" data-page-node-id="XWsTFuejMEB6LPGq3smQlQ">
+    <tr data-page-node-id="e9m5aXjF1HIIdTWu5WRGV3"><th data-page-node-id="fOSaNlNCfOLkHlDQyYxdDX">日期</th><th data-page-node-id="ox9niW69jbMfUTwAhKUX6I">主题</th><th data-page-node-id="WDJHqIFU7MFiSToxtgflyf">亮点</th><th data-page-node-id="yLL55GKvkEet1hsJ6tbxlt">住宿</th></tr>
+    <tr data-page-node-id="1EkbakxSrpjwvVqWvARCD3"><td class="d" data-page-node-id="LzaMrtGvtfzOA72UDpDGIz">9/11 周五</td><td data-page-node-id="2r6LGanoczqa0myuIaJz1a">飞抵太原</td><td data-page-node-id="jUYvzvF3cTH09a1z2jl8KY">晚班机 18:30 出发</td><td class="stay" data-page-node-id="zv0yjAjt7YCABH6aWjDPyT">太原 · 希尔顿欢朋(4钻)</td></tr>
+    <tr data-page-node-id="GFG3IeK5FqhU90UyqLIe3x"><td class="d" data-page-node-id="jy2opE8H0zNjGFxsYBiUMC">9/12 周六</td><td data-page-node-id="0j0e8zxMfHwGKxTgR8x36M">五台山朝圣</td><td data-page-node-id="XZnmKPSIfAka3bCdTuXo6Y">四寺 + 黛螺顶 1080 台阶</td><td class="stay" data-page-node-id="dgkIs2MWzjceAVTLBKPVDA">五台山 · 全季酒店(4钻)</td></tr>
+    <tr data-page-node-id="zPCPc6KtacsEvBFAJOSXdF"><td class="d" data-page-node-id="h628oWCmbAAPDmiLDvEtdq">9/13 周日</td><td data-page-node-id="mEtrWBMPmD28iD8e913gdE">悬空寺</td><td data-page-node-id="R2mpoFZK48Hm7280QFLWac">悬崖古寺 · 大同古城夜景</td><td class="stay" data-page-node-id="fiAkTcDA1LVIQ6GvXbKFxN">大同 · 代王府漫心(古城内)</td></tr>
+    <tr data-page-node-id="ZzaNtClMSJL1Zb9NMUTSHH"><td class="d" data-page-node-id="2USqo67KJe2BtCNj3vERXs">9/14 周一</td><td data-page-node-id="0nGEohJDqT3QyXUI3Vvf9n">石窟与木塔</td><td data-page-node-id="xrP3zGJRgGQgRKJyzRtUaO">云冈石窟 · 应县木塔</td><td class="stay" data-page-node-id="5jAwSDBd1lcW7lCddUHll7">太原 · 柳巷五洲假日(5钻)</td></tr>
+    <tr data-page-node-id="v3OqbWZhn2ximnZmDewtq3"><td class="d" data-page-node-id="8PcZyToEE8FiEGMYIab1pl">9/15 周二</td><td data-page-node-id="KWWZnLjFkm5DESDNfv14w5">晋商大院</td><td data-page-node-id="xJzC8ksKc10jFEMyRiF5Ho">乔家大院 · 平遥古城</td><td class="stay" data-page-node-id="ztj6cBMpgK5QdyIlDOVAzg">平遥 · 亚朵酒店(4钻)</td></tr>
+    <tr data-page-node-id="Bj1oi5Qi4uNAUaOAUELV7z"><td class="d" data-page-node-id="UWP1w4ikCQpZzTlggbLpo2">9/16 周三</td><td data-page-node-id="mmmY97FU7YT4DSDlQzGsMr">晋祠返程</td><td data-page-node-id="gp0jX2SgD2vJvCFivA7ZLy">晋祠 · 19:00 航班返沪</td><td class="stay" data-page-node-id="EH5Rw6M4viYRUYQzZAiKX6">回到温暖的家</td></tr>
+  </table>
+
+  <!-- D1 -->
+  <div class="day" data-page-node-id="e15yBaP3hl9rrWVrvsN07l">
+    <div class="day-head" data-page-node-id="sMeYyBFnNI1eDMZiCbiZPD"><span class="date" data-page-node-id="dazyE4NC4JDODOfpCvhAGE">9/11 周五</span><span class="t1" data-page-node-id="oOuBGpIzaa8BTSsPF6qHhD">上海 → 太原</span><span class="t2" data-page-node-id="K61H01mINsyXy3MYj3Sz8C">吉祥 HO1131 · 虹桥T2 18:30 → 武宿T2 20:45</span></div>
+    <div class="day-body" data-page-node-id="PYrQeeAmQ5rEHg4yxmXXTU">
+      <div class="row" data-page-node-id="vAR6QwDHAVnzCyID6fZ6aO"><span class="tm" data-page-node-id="tGNWKcC6P2LjcrX9fqbqZn">16:15</span><span class="k" data-page-node-id="4LClylclAPcbdndexoQe1b">集合</span><span class="v" data-page-node-id="5YptJjGt3axAwdkU73Y5Dp">虹桥机场 T2 集合出发（请提前抵达，登机口以航司信息为准）</span></div>
+      <div class="row" data-page-node-id="cXvV8neGKnutNHUP4TfOHE"><span class="tm" data-page-node-id="kulX4UBAHBbFABcnhRaKc3">18:30</span><span class="k" data-page-node-id="6TRn36qwN1bP5Ej2LEJg6V">飞行</span><span class="v" data-page-node-id="Iol2JtsZMcABJ40cOLdx02">上海 → 太原，飞行约 2h15m</span></div>
+      <div class="row" data-page-node-id="1EhLipvw3D4bYUaxyMDWx1"><span class="tm" data-page-node-id="qeUZFgvoilIokRAuZoSGos">20:45</span><span class="k" data-page-node-id="fnkq2dNmjeB1YxPBHFyRVj">抵达</span><span class="v" data-page-node-id="HmkpTnlbXN8BZg99WlZud5">地接接机，约 40 分钟车程入住酒店；当晚自由休息，可自行用简餐</span></div>
+      <div class="meals" data-page-node-id="bpwYw8e4GD9VpaQJrBC7dN">住宿：太原建设南路·希尔顿欢朋酒店（含双早）｜晚餐：自理（机上/落地简餐）</div>
+    </div>
+  </div>
+
+  <!-- D2 -->
+  <div class="day" data-page-node-id="mv1OVD3LaODSkEIbDkJAEc">
+    <div class="pic3" data-page-node-id="pic3-d2">
+      <figure data-page-node-id="pic3-d2-f1"><img src="assets/jbjb_wutai.jpg" alt="五台山 · 大白塔"><figcaption class="pcaption">五台山 · 大白塔</figcaption></figure>
+      <figure data-page-node-id="pic3-d2-p1"><img src="assets/jbjb_xiantong.jpg" alt="显通寺 · 大雄宝殿"><figcaption>显通寺 · 大雄宝殿</figcaption></figure>
+      <figure data-page-node-id="pic3-d2-p2"><img src="assets/jbjb_wutai2.jpg" alt="塔院寺 · 大白塔"><figcaption>塔院寺 · 大白塔</figcaption></figure>
+    </div>
+    <div class="day-head" data-page-node-id="5W826HkwvJQTaFtLHwr7hW"><span class="date" data-page-node-id="Ey44FzPeY0xdW6MmQwdFdP">9/12 周六</span><span class="t1" data-page-node-id="qOuHmbKqhokkS9g4qNGbje">五台山朝圣</span><span class="t2" data-page-node-id="oNsD8OxdNhp0q7lN7e6SDE">太原 → 五台山 · 约 250km / 2.5h</span></div>
+    <div class="day-body" data-page-node-id="BVhI8143RtoQwGSaP6HooJ">
+      <div class="row" data-page-node-id="laJu3MufMVHaHyad16tQzr"><span class="tm" data-page-node-id="MLB1zCRocCbTd4LpnkWfLk">07:30</span><span class="k" data-page-node-id="oELeF5OZsJ1COTcAAOOgZ0">出发</span><span class="v" data-page-node-id="msyccI9ClCM2V9EeB2BBDd">酒店早餐后出发，全程高速赴五台山</span></div>
+      <div class="row" data-page-node-id="CIcBacA2k0c9EYqvB8CDFf"><span class="tm" data-page-node-id="Q1ayO2GUQxEY6MRP7jP4I5">10:30</span><span class="k" data-page-node-id="SQj3flyD0KCLL7cax4BoK2">朝拜</span><span class="v" data-page-node-id="PjcmD1JX802LUkkEvAYMNs"><b data-page-node-id="g06wj4Mdyx0xN4WJ11bpFG">殊像寺</b>（文殊祖庭）→ <b data-page-node-id="f5ktbJBWjnOBKdgFG6An4Q">塔院寺</b>（大白塔）→ <b data-page-node-id="1HRpGepCKQOFEWiFDezD2V">菩萨顶</b> → <b data-page-node-id="65Nh7TAtBUJzPIdpy1kDTV">显通寺</b>（五台山历史最久寺院）</span></div>
+      <div class="row" data-page-node-id="Sxw7WFE6x4Y8XTBZQ4dHI5"><span class="tm" data-page-node-id="AhdMBFmi4dYshGEDMzmRZo">12:00</span><span class="k" data-page-node-id="jf0iPNh0iEAtclCuXvw7rH">午餐</span><span class="v" data-page-node-id="bxKNPtN03zTDFjeL1en3bo">一盏明灯 · 全素斋（五台山特色素斋）<span class="tbd">（待定 · 以当日实际为准）</span></span></div>
+      <div class="row" data-page-node-id="MLKDZGxWcgYAGABHCUoL78"><span class="tm" data-page-node-id="gwWQr7aMXP8Lg9AMR4ddR7">14:00</span><span class="k" data-page-node-id="h1WJI9yuwifZqnbGKFrYAT">黛螺顶</span><span class="v" data-page-node-id="LbEWq2nYoHEhHVlYjIPGHn">登 1080 级台阶朝五方文殊 <span class="tag-gold" data-page-node-id="PkumIBvDa0cBWyCMwvYCbU">体力不支可山脚休息，量力而行</span></span></div>
+      <div class="row" data-page-node-id="JdjVazut1MoBwLnxo5LmyU"><span class="tm" data-page-node-id="KoBv3JG8Po92hDvGk0lxFn">18:00</span><span class="k" data-page-node-id="HZ8wBFrIX6jTK1GBFUfayF">晚餐</span><span class="v" data-page-node-id="X10UHobFWhjL6QaMqOfWEb">清凉一品香（荤素搭配）<span class="tbd">（待定 · 以当日实际为准）</span></span></div>
+      <div class="meals" data-page-node-id="Y6NtQGD8QHR3rXEYQ3AiNf">住宿：五台山 · 全季酒店（含双早）｜注意：今日海拔较高，全天备一件厚外套</div>
+    </div>
+  </div>
+
+  <!-- D3 -->
+  <div class="day" data-page-node-id="vctlWSFICOYwzD7mc1E1kw">
+    <div class="pic3" data-page-node-id="pic3-d3">
+      <figure data-page-node-id="pic3-d3-f1"><img src="assets/jbjb_xuankong.jpg" alt="悬空寺 · 凌空栈道"><figcaption class="pcaption">悬空寺 · 凌空全景</figcaption></figure>
+      <figure data-page-node-id="pic3-d3-f2"><img src="assets/jbjb_datongcity.jpg" alt="大同古城"><figcaption class="pcaption">大同古城</figcaption></figure>
+      <figure data-page-node-id="pic3-d3-f3"><img src="assets/jbjb_xuankong2.jpg" alt="悬空寺 · 山崖远景"><figcaption class="pcaption">悬空寺 · 山崖远景</figcaption></figure>
+    </div>
+    <div class="day-head" data-page-node-id="dc3mn2IdBlJsO1CxRgo2u1"><span class="date" data-page-node-id="2It9fTx04xEYLvhYPi0ePI">9/13 周日</span><span class="t1" data-page-node-id="CrcDIxHU4OnjqhyqQNDJDE">悬空寺 → 大同古城</span><span class="t2" data-page-node-id="n3BT2UYw96d1u46CIYBGJe">五台山 → 悬空寺（约4h，道路施工绕行）→ 大同 80km</span></div>
+    <div class="day-body" data-page-node-id="xElR66iQNkXDyqaUNYeYVb">
+      <div class="row" data-page-node-id="zYSRE7q7qSRcFcCf7xgB3B"><span class="tm" data-page-node-id="VsGWlWXGEbMDPTVAw0fXmD">07:00</span><span class="k" data-page-node-id="3T5gZnnU4ijqViVtFpKp0k">出发</span><span class="v" data-page-node-id="2QlNlUAf5BsiFct0M76C6U">早餐后出发赴浑源（当日车程较长，可备颈枕；受五台山北线道路施工影响约 4h 车程）</span></div>
+      <div class="row" data-page-node-id="P7sOBCyVdAcsePfU0FOj7l"><span class="tm" data-page-node-id="YAzZTUlyuv4vPI9IcBw54F">约12:00</span><span class="k" data-page-node-id="kiOaWhBeTxBwy7bNVv58pB">午餐</span><span class="v" data-page-node-id="vAhVGJ68g7DDjWRtrz76w9">浑源 · 蔡家酒楼（浑源凉粉等地方风味）<span class="tbd">（待定 · 以当日实际为准）</span></span></div>
+      <div class="row" data-page-node-id="xJYpMl63ymun5fIajFmRc1"><span class="tm" data-page-node-id="SQoXaEdRKQeY2fJDx4wpDm">13:30</span><span class="k" data-page-node-id="uRV5j6FvuPgJMy68HlDg7J">悬空寺</span><span class="v" data-page-node-id="6oCoAIYfxecSU5a4o9zU2H">游览世界文化遗产悬空寺（首道票+景交已含）<span class="tag-gold" data-page-node-id="11UPz4YczWxa0FUof5EYR3">登临需提前抢票，见注意事项 2</span></span></div>
+      <div class="row" data-page-node-id="1CfydFcrOq4T5M9AckRcNn"><span class="tm" data-page-node-id="ar7Co0FwnhL30U2DLi3cbQ">16:30</span><span class="k" data-page-node-id="djMjC0k2qfd9pvrOx6KUPX">大同</span><span class="v" data-page-node-id="V8DSIckf3fBJ6wrhcW5Oio">赴大同古城入住，晚间古城墙夜景自由活动</span></div>
+      <div class="row" data-page-node-id="coTKboedxyh7LbaupyqYd4"><span class="tm" data-page-node-id="d748hcGOsFXQbjrNmTB3tN">18:30</span><span class="k" data-page-node-id="MgQWoy6RuVQQW1f9J2tgrZ">晚餐</span><span class="v" data-page-node-id="hhprBjKICtV8vTzIXfGz0G">古城内 · 凤临阁（大同名店）<span class="tbd">（待定 · 以当日实际为准）</span></span></div>
+      <div class="meals" data-page-node-id="3kH1fohiG9bOqoBdFW0hEm">住宿：大同 · 代王府漫心酒店（古城内，含双早）</div>
+    </div>
+  </div>
+
+  <!-- D4 -->
+  <div class="day" data-page-node-id="ZDnT9YQSJ78fVMq6LsVpZY">
+    <div class="pic3" data-page-node-id="pic3-d4">
+      <figure data-page-node-id="pic3-d4-f1"><img src="assets/jbjb_yungang.jpg" alt="云冈石窟 · 露天大佛"><figcaption class="pcaption">云冈石窟 · 露天大佛</figcaption></figure>
+      <figure data-page-node-id="pic3-d4-f2"><img src="assets/jbjb_muta.jpg" alt="应县木塔"><figcaption class="pcaption">应县木塔 · 正面</figcaption></figure>
+      <figure data-page-node-id="pic3-d4-f3"><img src="assets/jbjb_muta2.jpg" alt="应县木塔 · 绿树蓝天"><figcaption class="pcaption">应县木塔 · 全景</figcaption></figure>
+    </div>
+    <div class="day-head" data-page-node-id="GNtJ2dqSDnLg8uOtaCsBom"><span class="date" data-page-node-id="3m6lOt17eTcly5xXDt43oF">9/14 周一</span><span class="t1" data-page-node-id="pNG8fCOJ3StSC0TSkYThi2">云冈石窟 · 应县木塔</span><span class="t2" data-page-node-id="AeY0ryDZfGHXPPOfFTOBTy">大同 → 云冈 → 应县 80km → 太原 250km</span></div>
+    <div class="day-body" data-page-node-id="jCnRL57nW5fDQhMgLw3IyE">
+      <div class="row" data-page-node-id="iTEw6xbOtdTHAqy89bsC5R"><span class="tm" data-page-node-id="gywZBJNhApMRn1EjLIHVcF">08:30</span><span class="k" data-page-node-id="YVsIS2Jm5zWnQbFltp7So2">云冈</span><span class="v" data-page-node-id="CP82gcp1pKpPonYg0naTE1">世界文化遗产 <b data-page-node-id="twxFaD0ZPZMWDjwGuG1JMO">云冈石窟</b>（门票+电瓶车已含），北魏皇家石窟群</span></div>
+      <div class="row" data-page-node-id="2EJIkpMjtTE51Ed5isk0it"><span class="tm" data-page-node-id="M0J0N0dRbyMZpgoWQSAzcp">12:00</span><span class="k" data-page-node-id="1Qml1xpA7qB94SHOIC5zDJ">午餐</span><span class="v" data-page-node-id="q6Cohz3rZIwudQFjdcWiHJ">大同 · 紫泥 369（西环店）<span class="tbd">（待定 · 以当日实际为准）</span></span></div>
+      <div class="row" data-page-node-id="Nm47JSS5tSTU4c3reiBClM"><span class="tm" data-page-node-id="YIJ1b5ES7FY1m1w9Izmpxn">14:00</span><span class="k" data-page-node-id="2ny8hZE7ej8UCVcBwbfB4j">木塔</span><span class="v" data-page-node-id="on675L8fANDGcNXAIdpqP7"><b data-page-node-id="slPrfPcy0jM0CHTJzatHLy">应县木塔</b>——世界现存最古老纯木结构楼阁式塔（门票已含）</span></div>
+      <div class="row" data-page-node-id="1TK6C3zIruuFSstbJmTpEY"><span class="tm" data-page-node-id="O3kIHRjDnimPfXwVzhtrqk">15:30</span><span class="k" data-page-node-id="HxJ2D4ncq1odJPiPEWq2eA">太原</span><span class="v" data-page-node-id="ErNPoDwOiit83BxdZFLm0q">约 3h 车程返太原（受高速施工影响可能略有绕行，以实际为准）</span></div>
+      <div class="row" data-page-node-id="RIAbXYmeaImb6QmvDolCFe"><span class="tm" data-page-node-id="udBGI5CEvjJQNhc5juGOGk">19:30</span><span class="k" data-page-node-id="TGe6RGWZR5oX9CvkJNbA0k">晚餐</span><span class="v" data-page-node-id="9YplbjVlJt6foXh9ecKVuz">太原 · 山西饭店（山西饭店旧址，晋菜风味）<span class="tbd">（待定 · 以当日实际为准）</span></span></div>
+      <div class="meals" data-page-node-id="i5c3LViH0RvCHiAaxMZOoQ">住宿：太原 · 柳巷五洲假日酒店（5钻，钟楼街商圈，含双早）｜晚间可步行逛钟楼街夜市</div>
+    </div>
+  </div>
+
+  <!-- D5 -->
+  <div class="day" data-page-node-id="R0ghkiKLzNDru5JRV8FOsu">
+    <div class="pic3" data-page-node-id="pic3-d5">
+      <figure data-page-node-id="pic3-d5-f1"><img src="assets/pingyao_qiaojia.jpg" alt="乔家大院 · 在中堂"><figcaption class="pcaption">乔家大院 · 在中堂</figcaption></figure>
+      <figure data-page-node-id="pic3-d5-f2"><img src="assets/pingyao_gucheng.jpg" alt="平遥古城 · 俯瞰"><figcaption class="pcaption">平遥古城 · 俯瞰</figcaption></figure>
+      <figure data-page-node-id="pic3-d5-p1"><img src="assets/jbjb_pingyao_menlou.jpg" alt="平遥古城 · 市楼"><figcaption>平遥古城 · 市楼</figcaption></figure>
+    </div>
+    <div class="day-head" data-page-node-id="eBba2PjHBwlAo6QnwoGKBn"><span class="date" data-page-node-id="fzOTKQMRfPTAKvod0ZoIpP">9/15 周二</span><span class="t1" data-page-node-id="Y4ABOiw0rFoTNnFeKLHwHD">乔家大院 · 平遥古城</span><span class="t2" data-page-node-id="J6tlpp52xEyoiZMU0tJW2K">太原 → 乔家 50km → 平遥 50km</span></div>
+    <div class="day-body" data-page-node-id="EOWtHUz2fpVRQIG8wP1i2g">
+      <div class="row" data-page-node-id="FHYXLOuA2dmhQeu46PKV3q"><span class="tm" data-page-node-id="7vqCaVMLIHPajx4gl8suYl">08:30</span><span class="k" data-page-node-id="V0ekEuzuhSwNt7DeBu63d9">乔家</span><span class="v" data-page-node-id="k9E1YtGZeWjhIFo0NKNTY1"><b data-page-node-id="CsbeKMMSymqRsIKbxdEYFN">乔家大院</b>（门票已含）——晋商民居典范，《大红灯笼高高挂》取景地</span></div>
+      <div class="row" data-page-node-id="ADY8hnG2cjdAykREAEgaEi"><span class="tm" data-page-node-id="l2In9Akk1QrxDPf0PPAGa8">12:00</span><span class="k" data-page-node-id="ND8OlliqHPMlNlxEjOAUd7">午餐</span><span class="v" data-page-node-id="7GLM8Y89zE2uRoZO86jA91">乔家老号 · 八碗八碟（特色晋菜）<span class="tbd">（待定 · 以当日实际为准）</span></span></div>
+      <div class="row" data-page-node-id="RGLs8MO8sGviZBSpKHDmqs"><span class="tm" data-page-node-id="qsDesnGMYuS48I9CHM8YVV">14:00</span><span class="k" data-page-node-id="xWPBaxRWruCEudknCXbkpk">平遥</span><span class="v" data-page-node-id="FBe9FscpIWnMdthdDBiPg2">世界文化遗产 <b data-page-node-id="wgB2cjEbfHvj4XFCoReozR">平遥古城</b>（通票已含）：古城墙 → 古县衙 → 明清一条街 → 日升昌票号 → 协同庆</span></div>
+      <div class="row" data-page-node-id="8cWmip8RWB8WXwrizzQRuD"><span class="tm" data-page-node-id="LZDWJGaEiMVsERyfD2xhbE">18:30</span><span class="k" data-page-node-id="2tavQ77RXrHcPSA0CLBYNg">晚餐</span><span class="v" data-page-node-id="zr2dPX1BoN6uy8qM9fYGtt">天元奎（明清街人气餐馆，平遥牛肉）<span class="tbd">（待定 · 以当日实际为准）</span></span></div>
+      <div class="meals" data-page-node-id="0o9KjTGGvB1FRQEzopItux">住宿：平遥 · 亚朵酒店（含双早）｜晚间可逛明清街夜景</div>
+    </div>
+  </div>
+
+  <!-- D6 -->
+  <div class="day" data-page-node-id="ok1OrUhxGUlHjWOJVGPSUH">
+    <div class="pic3" data-page-node-id="pic3-d6">
+      <figure data-page-node-id="pic3-d6-f1"><img src="assets/jbjb_jinci.jpg" alt="晋祠 · 三晋名泉亭"><figcaption class="pcaption">晋祠 · 三晋名泉亭</figcaption></figure>
+      <figure data-page-node-id="pic3-d6-f2"><img src="assets/jbjb_jinci2.jpg" alt="晋祠 · 圣母殿"><figcaption class="pcaption">晋祠 · 圣母殿</figcaption></figure>
+      <figure data-page-node-id="pic3-d6-p1"><img src="assets/jbjb_yufei.jpg" alt="晋祠 · 鱼沼飞梁"><figcaption>晋祠 · 鱼沼飞梁</figcaption></figure>
+    </div>
+    <div class="day-head" data-page-node-id="lwunIYIviyIF34hlTfLPSr"><span class="date" data-page-node-id="FA7vkfC5bArfXlzSK4HUkw">9/16 周三</span><span class="t1" data-page-node-id="zMwRRkRWEpnxJH8aEgw2EE">晋祠 → 返沪</span><span class="t2" data-page-node-id="Dm5J5MGbujTTdb1jQDk0Xy">东航 MU2410 · 武宿T2 19:00 → 虹桥T2 21:15</span></div>
+    <div class="day-body" data-page-node-id="34ovEznWfSpD9HwS98TSMr">
+      <div class="row" data-page-node-id="oT94eBfOwmBtrygiB3RPdA"><span class="tm" data-page-node-id="Vr6VxMLYVrs9o7PwBoTDNo">上午</span><span class="k" data-page-node-id="5AWaF3RabwtECH3l1FlSnD">自由</span><span class="v" data-page-node-id="RlotMX9YQpxbjogwLHzNQu">酒店早餐后平遥自由活动（可再逛明清街、买伴手礼），11:30 前退房</span></div>
+      <div class="row" data-page-node-id="AFBgVosZGARVtMWYpltjER"><span class="tm" data-page-node-id="MDcRWSjifKXXYELxX98GqY">12:00</span><span class="k" data-page-node-id="bGxXxPq4neWslhreaECTxp">午餐</span><span class="v" data-page-node-id="DC6Qu0QpF5mSGGmIqUrMdA">又见一面（平遥）<span class="tbd">（待定 · 以当日实际为准）</span></span></div>
+      <div class="row" data-page-node-id="8WY5m77QD17lU2oEn7aN2T"><span class="tm" data-page-node-id="FTo67gL5Le4TpHOX0PaIOK">13:30</span><span class="k" data-page-node-id="EaSmA16riN8UYunN77hWtC">晋祠</span><span class="v" data-page-node-id="G3f9lDZjyUtMdgySkG8T4W"><b data-page-node-id="zy6dcHKhOQcJewXMgfGFIT">晋祠</b>（门票+电瓶车已含）——现存最早皇家祭祀园林，圣母殿、难老泉</span></div>
+      <div class="row" data-page-node-id="rwONbg1zdpmi2gkW7MeI6V"><span class="tm" data-page-node-id="kHEoboUBTnciqReDI8eluR">16:00</span><span class="k" data-page-node-id="wTg1B6tWsfSNSqEYTYeB0T">机场</span><span class="v" data-page-node-id="Jnotste68J4tz2zBqoT0FD">送太原武宿机场，办理值机托运</span></div>
+      <div class="row" data-page-node-id="i6nhryZOHofMEADtqM64wG"><span class="tm" data-page-node-id="ZOrI50L4TqdJCkmbjAZwoq">19:00</span><span class="k" data-page-node-id="C3x5H4yMgqwJgk2gdWaKOE">返程</span><span class="v" data-page-node-id="924u9G9PmRphDpvGQHCPyd">太原 → 上海，约 21:15 抵虹桥，行程结束</span></div>
+      <div class="meals" data-page-node-id="GOS9CyRbRzbpzBpbeeQFBg">午餐已含，晚餐自理（机上/回家用）</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= P2 天气与穿衣 ================= -->
+<section id="p2" data-page-node-id="QayhdfNEBhfOpkOoDPWyv3">
+  <div class="sec-head" data-page-node-id="P4NElFVhzBhzBk1AzGtd7x"><span class="sec-no" data-page-node-id="5A22KjEnTo8AhcfNnVHgEO">02</span><h2 data-page-node-id="eWbXWZXIjK3AqbbTe2uwSE">天气与穿衣</h2><span class="tip" data-page-node-id="eLWkdDqdRgteDKPE2GE1EJ">历年 9 月参考值 · 出行前 1-2 天看实时预报</span></div>
+  <p style="font-size:13.5px;color:var(--gray);margin-bottom:12px" data-page-node-id="FJElOIWMSxUH3MZItcMCVr">山西 9 月的脾气：<b style="color:var(--navy)" data-page-node-id="qdXVRppiQN0UrCMFFHPmD3">早晚像初冬、中午像夏天</b>，昼夜温差普遍 10℃ 以上，午后偶有阵雨，紫外线强且空气干燥——带对衣服是这趟旅行舒服的关键。</p>
+
+  <div class="weather-grid" data-page-node-id="R3p9k2QzTIoR0UQGbzhYUB">
+    <div class="wcard" data-page-node-id="ArNFyFSokMqOygesceV0WD">
+      <div class="city" data-page-node-id="dmpOQk1DgfyftEACCSXI6y">五台山 · 9/12</div>
+      <div class="temp" data-page-node-id="2MoekVqQZuEdAhQKIMsW5X"><b data-page-node-id="XJXWBBal0WtWWaIE451XbD">3 ~ 18℃</b><span data-page-node-id="TCiDOHAiXUpvfL3DDKWC0K">台怀镇</span></div>
+      <div class="note" data-page-node-id="MM0M9srHny3dPHxrFB8GG7">全程最冷一天<br data-page-node-id="VcQFazXRA0mfdGgS2N0mSp">白天外套 · 早晚需厚外套/轻薄羽绒</div>
+    </div>
+    <div class="wcard" data-page-node-id="KEPyet2O6vzQPs41KpnfNO">
+      <div class="city" data-page-node-id="dDpNDiTgsqHgVUomvOMUx6">大同 · 9/13-14</div>
+      <div class="temp" data-page-node-id="dAsY8UdNMtvV3978u6BY6L"><b data-page-node-id="FeAs15j7Eyy3Edh4vBD1DH">8 ~ 23℃</b><span data-page-node-id="eJckSwADt1paVK2vW1PiSf">悬空寺/云冈</span></div>
+      <div class="note" data-page-node-id="LZicKMe2bCIOC94W8GDLxz">山风较大<br data-page-node-id="CnhSD08iiZXVw7taphMybZ">防风外套必备</div>
+    </div>
+    <div class="wcard" data-page-node-id="ilDLMT9g2gNFIFQeiWCkFO">
+      <div class="city" data-page-node-id="bjpTytvU7AMNAaQJ70EB9V">太原 · 9/14/11</div>
+      <div class="temp" data-page-node-id="6kGcBSTNthYDmcPZtDYyWd"><b data-page-node-id="1Si6eDNOkTpmpwn8fPuTXo">12 ~ 25℃</b><span data-page-node-id="wygHunMk16KeMYinlj3JOT">市区</span></div>
+      <div class="note" data-page-node-id="FGDEkyyJGHZ08sAfAd2c1T">相对舒适<br data-page-node-id="SavC116EIoHPlAYWwGBsY6">早晚一件薄外套</div>
+    </div>
+    <div class="wcard" data-page-node-id="a4KrAXoQmr40r1eVK8IP1M">
+      <div class="city" data-page-node-id="optLVZeGqRW4ZV2oOSVCEH">平遥 · 9/15-16</div>
+      <div class="temp" data-page-node-id="YFWCwaixeFF0X0iOox4hR4"><b data-page-node-id="NhKjiMaUClR7ik5ZdkmvSU">13 ~ 26℃</b><span data-page-node-id="lfNK7yv5BsBhTvOvPBTYIT">古城</span></div>
+      <div class="note" data-page-node-id="2igY62PadkEViEPF1YvspL">中午偏热<br data-page-node-id="dSUhGpv47p5Ds4TBEXuXOS">古城石板路步行多</div>
+    </div>
+  </div>
+
+  <div class="layer" data-page-node-id="cUW7OyH65UWcNxWLr6D7eD">
+    <h4 data-page-node-id="zy1hnn9epjyjgjyY7afjHz">推荐「洋葱式」三层叠穿（可随时穿脱）</h4>
+    <ul data-page-node-id="YxhrQIKUgPvEHMbE0ZHTsC">
+      <li data-page-node-id="d63A6xFr0qAbNc46wET50b"><b data-page-node-id="jCC2YcFthM7tgwmXszjqid">内层：</b>速干/透气长袖 T 恤（别穿纯棉贴身，出汗后山风一吹容易感冒）；</li>
+      <li data-page-node-id="PRp25GFBy5xrqW86btgTR7"><b data-page-node-id="1qtRhMGhLht9fpmTt75fxF">中层：</b>抓绒衣或薄卫衣，早晚保暖、中午可脱；备一件可压缩薄羽绒最稳妥（五台山这天用得上）；</li>
+      <li data-page-node-id="xCCN0MCi1NgaGaukOgsNCP"><b data-page-node-id="E6qR28lYH8dCy0HihJWxNI">外层：</b>防风夹克 / 薄冲锋衣，挡风也防阵雨。</li>
+      <li data-page-node-id="vOsWPAubgD5w7u84lX1xvm"><b data-page-node-id="fBMbfJ4QVHc34EqjAdOVaf">鞋：</b>防滑舒适的运动鞋/徒步鞋（黛螺顶 1080 台阶 + 古城石板路全靠它），请勿穿高跟鞋、皮鞋。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= P3 携带物品 ================= -->
+<section id="p3" data-page-node-id="7tEf6PqIAwxwCEE1ZJTPu8">
+  <div class="sec-head" data-page-node-id="9SognSSRP1reDjmiTcfMJg"><span class="sec-no" data-page-node-id="5s5BmX71haHlQ0FLRFzGuR">03</span><h2 data-page-node-id="arkip8xHp2IXEZh3WwHfby">携带物品清单</h2><span class="tip" data-page-node-id="WiWTFg6wHGiEVtWDOxfCBi">「必带」请出门前再核对一遍</span></div>
+  <div class="list-grid" data-page-node-id="2SorCDgxD1OTBceAGyquSN">
+    <div class="lcard" data-page-node-id="G3BI7pdDPgoeYwJLldJTFO">
+      <h4 data-page-node-id="Uyjzp5qEB2ZBYzGEBvbOLX">证件与票务</h4>
+      <ul data-page-node-id="2Hw6AQEUQ5ByFor9aT52my">
+        <li class="must" data-page-node-id="XOAWDDchtKDbiXRJcjsH4H"><b data-page-node-id="S0vFTt8ysKXhTI1EqXaryN">身份证原件</b>：登机 + 全部景点实名，全程唯一硬证件</li>
+        <li data-page-node-id="5Q5EXoQOrAIChdVmHLFTT7">登临票预约：确认「恒山景区」公众号已注册实名（想登临的同事）</li>
+        <li data-page-node-id="eCHiafAY5ghO2GuZC96aRm">手机保持电量，旅行群置顶</li>
+      </ul>
+    </div>
+    <div class="lcard" data-page-node-id="dPFYK4Rc3CqcHsoFWKDb3i">
+      <h4 data-page-node-id="prCn5fIWC4zF33VYGuSk0R">衣物（叠穿为主）</h4>
+      <ul data-page-node-id="icDGB3UBoIvVWIZ35oYbYC">
+        <li data-page-node-id="FNIYTkVjJ8wUDJG9t8rVOW">长袖 + 薄外套若干套，方便分层穿脱</li>
+        <li data-page-node-id="sMzoj1m8HLoJIC9FZYMsVD"><b data-page-node-id="8aj9Fr8eYW6BZbMnRzVcW8">一件厚外套/轻薄羽绒</b>：五台山早晚用</li>
+        <li data-page-node-id="UNhAODmPMEfL9ROwmScpG3">舒适防滑运动鞋（必带）、袜子多备几双</li>
+        <li data-page-node-id="O2hxyw3isAaTJhNEsESRTh">雨具：轻便雨衣或折叠伞（阵雨说来就来）</li>
+      </ul>
+    </div>
+    <div class="lcard" data-page-node-id="yFKD4mxNHeIbecze2HReJO">
+      <h4 data-page-node-id="9KEuv1Nl6oY3POp6FOEoBB">日用防护</h4>
+      <ul data-page-node-id="I0CzZY4AD2ueqeZnzJJByq">
+        <li data-page-node-id="ArdB4WqW3cg7BiefvlIGhv">防晒霜（紫外线强）、太阳镜、遮阳帽</li>
+        <li data-page-node-id="D5PaOQG5O9CGWoNXHz6rTM">保温杯（多喝水，气候干燥）</li>
+        <li data-page-node-id="fT0tzEu4wI1ERFis5i4OZH">充电宝、常用洗漱用品、纸巾湿巾</li>
+      </ul>
+    </div>
+    <div class="lcard" data-page-node-id="xsk9ymghQ7cC9GW9uyA1B3">
+      <h4 data-page-node-id="AqXDIU5c6nIXDxOMHMIO9F">药品与随身</h4>
+      <ul data-page-node-id="1mzncUY26thgxjdJbfVF0W">
+        <li data-page-node-id="1mDKnZDvn451f21VlhO2iw"><b data-page-node-id="4ja0u9sBzhkNfPaU6La2xT">晕车药</b>：多日车程 2.5-4h，容易晕车的同事备好</li>
+        <li data-page-node-id="aiLJInAcNvm3zYIWjoDdF4">个人常备药（肠胃药、感冒药、创可贴等）</li>
+        <li data-page-node-id="hAmdrjVYglYCvjtBtazrJp">颈枕、少量零食（长途车解闷）</li>
+        <li data-page-node-id="G17tgE7xzj4vvtuSmYkvmv">少量现金（零钱，景区小摊/功德箱用）</li>
+      </ul>
+    </div>
+  </div>
+  <p style="margin-top:12px;font-size:13px;color:var(--gray)" data-page-node-id="Il8REnFpX1XAVcIuqsaIFE">行李提示：全程每天换一家酒店，建议 1 个登机箱 + 1 个随身包，贵重物品随身带；出发前 10 分钟自查房内有无遗漏。</p>
+</section>
+
+<!-- ================= P4 注意事项 ================= -->
+<section id="p4" data-page-node-id="Z2goELWOyrngqaG2k9J0yv">
+  <div class="sec-head" data-page-node-id="52XZxi054LeZQM2ffISCMT"><span class="sec-no" data-page-node-id="QOnZUTbdg8tkalAy5S79xj">04</span><h2 data-page-node-id="TrhL5yQ4Nb7ADhZaLCVHBK">注意事项</h2></div>
+  <div class="tips" data-page-node-id="oFDkkE4qzkbI9axaOV85s1">
+    <div class="tip hot" data-page-node-id="js3jHvp1Oew2sWwx1LC1dL">
+      <h4 data-page-node-id="PJKcbGLxMYQBxtm4BqCM2K">悬空寺登临票 · 100 元/人（先垫付 · 回程报销）</h4>
+      <ul data-page-node-id="74JXqG7ahNXyUbbX0ezGJo">
+        <li data-page-node-id="MHGDmUVgG5fUqTBprk454R">悬空寺门票分两层：<b data-page-node-id="nENR4NyFHVcAtzzspuIryd">景区首道票（含景交）已由公司统一含在团费中</b>；如需「登临」悬空寺栈道，需另购登临票 <b data-page-node-id="qqBv50FWMxCw1SmVxdIGT2">100 元/人</b>：个人先垫付购票，回程凭购票凭证统一报销（详见 05 费用说明）。</li>
+        <li data-page-node-id="JtbFQ1yeN6evhtIR3WDcLk">登临票无旅行社通道、景区限购：须<b data-page-node-id="bvPFYq85qAgFZ5ruDnPBSK">提前 7 天（9/6 当天）早上 07:20</b>，在微信「<b data-page-node-id="1ynBBJ2E3q46vLmzul9n19">恒山景区</b>」公众号自行抢票，需<b data-page-node-id="ZXF5XWarAAh3cYykyn9usu">身份证实名 + 人脸识别</b>，先到先得。</li>
+        <li data-page-node-id="CHwLlBXDMPlLvE8eEiyB4v">想登临的同事请 9/6 早 07:20 前做好准备；<b data-page-node-id="0NjT01mFg1KhDrbASaR8Ut">未抢到不影响行程</b>，可在金龙峡口远观拍照，风景同样震撼。抢到的同事请保留购票订单截图/凭证，回程用于报销。</li>
+      </ul>
+    </div>
+    <div class="tip" data-page-node-id="lbf4u6MFntkPUxoxP7ExEk">
+      <h4 data-page-node-id="Pkz8ZNRW7W15NEN6zs0yvl">集合与守时</h4>
+      <ul data-page-node-id="taQb5w14Ol5mMVoB3ryBjw">
+        <li data-page-node-id="wWtMrUWJehpDm0498MM7pY">每天出发时间以群内通知为准，提前 10 分钟到车上；<b data-page-node-id="Sh5bDqwbBuyNRbXhJM0And">大巴准点发车，迟到不等</b>。</li>
+        <li data-page-node-id="3E7Rllv6OQUWRy7R4nZGD8">全程同一辆车、固定座位，下车记车牌号；手机保持畅通，跟紧领队不落单。</li>
+      </ul>
+    </div>
+    <div class="tip" data-page-node-id="VSeFFGCkZVcMia5HSkFBHo">
+      <h4 data-page-node-id="scnWsMd87PLEjxymieboiy">寺院礼仪（五台山）</h4>
+      <ul data-page-node-id="OrsF49qghLxTmugIebMUFC">
+        <li data-page-node-id="wFaXa0oxvBNq65RsLfxS1W">着装得体：不穿短裤、短裙、吊带进入寺院；</li>
+        <li data-page-node-id="iVghCDoeAaTBGoADAUQzQ0">进殿脱帽、不踩门槛、殿内不拍照、不喧哗；绕塔/绕殿顺时针行走；</li>
+        <li data-page-node-id="sCKluLN83ZRNSA1ZkSCh8R">尊重信仰，上香随缘，勿轻信路边"僧人"搭讪推销。</li>
+      </ul>
+    </div>
+    <div class="tip" data-page-node-id="Dh0epLo32Bv0xcXU9NjE8E">
+      <h4 data-page-node-id="WbuDGKkA2vyLH6OG34p7Hl">古建防火 · 全团红线</h4>
+      <ul data-page-node-id="RGUbeBlF1DObtr2BvlONeW">
+        <li data-page-node-id="md5zNXLuFoHHi1dzwhhpmK">悬空寺、应县木塔、云冈、乔家大院、晋祠均为<b data-page-node-id="QFY2qjkZBmBfoOVJ8VWo6H">木质古建，全程严禁吸烟、严禁明火</b>；</li>
+        <li data-page-node-id="mEwDKL2zv6ZkWcb4YnHdKS">室内文物请勿使用闪光灯拍照；烟民请到景区指定区域。</li>
+      </ul>
+    </div>
+    <div class="tip" data-page-node-id="YHjDGZCSA2O5h2uTomn9Q1">
+      <h4 data-page-node-id="GjnbWlV6Gw9R09T1Hqq5yQ">体力与健康</h4>
+      <ul data-page-node-id="ZYozUR2uZwLEXwykbHH1sG">
+        <li data-page-node-id="5XdSSDJjkuLE7KnVjBKfIe">黛螺顶 1080 级台阶约需 30-40 分钟，<b data-page-node-id="lekB4il71GRoLVvSNEH7kg">量力而行</b>，体力不支可在台怀镇休息，与领队报备即可，不强求登顶；</li>
+        <li data-page-node-id="OKnktHNGIdAhttoTZCUGEL">高原+干燥：多喝水、注意防晒；温差大谨防感冒，身体不适第一时间告诉领队。</li>
+      </ul>
+    </div>
+    <div class="tip" data-page-node-id="IC7GAMA8fS9fywSgYEZ35B">
+      <h4 data-page-node-id="NzTO5kgfDpx73J8Fh6kxjZ">安全与其他</h4>
+      <ul data-page-node-id="KqIgMMM8HlFpPqvuhHfxwj">
+        <li data-page-node-id="LDHVp6KUc8IOjcewQaluM1">车程长请系好安全带；古城/景区人多，看管好随身物品；</li>
+        <li data-page-node-id="vWHEQwOUoJIy2AMxoVh2mC">自由活动时间请按时归队；个人消费自行负责，如需帮助随时找领队或执行组。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= P5 费用说明 ================= -->
+<section id="p5" data-page-node-id="N4vnrm5AugDKN5CE2jM4Jq">
+  <div class="sec-head" data-page-node-id="FJ0KyiuQ0puzGvHs2QGrDk"><span class="sec-no" data-page-node-id="NGqGMb4dgjwdDTzqrWxFrK">05</span><h2 data-page-node-id="Q0ESCHiy7G6SJNrz86atFi">费用说明</h2><span class="tip" data-page-node-id="uuBbBmBOz1BQegfs8fWJvB">公司统一承担 · 另有 1000 元/人山西旅行经费可报销</span></div>
+  <div class="fee" data-page-node-id="eKC1MVdS41cGMK1vXgFOyH">
+    <div class="feecard inc full" data-page-node-id="jAujxqYwBRAUvK83KsGvis">
+      <h4 data-page-node-id="czLcSGhh2BcRdUK249QUO3">公司已统一安排（无需个人付费）</h4>
+      <ul data-page-node-id="6jULnSvxGEyrtUmwReQ4es">
+        <li data-page-node-id="RD3vyfS2ZVOZRgaF9BGbeL">上海 ⇌ 太原往返机票</li>
+        <li data-page-node-id="Jg8rLX4XCVH0hvjCHFlxlW">5 晚 4-5 钻酒店（均含早餐）</li>
+        <li data-page-node-id="1eOsrI25RcGSGzL7hLZ70Q">行程内正餐（9/12-9/16 团餐）</li>
+        <li data-page-node-id="hvKDvP0icx5Eln4q0GN7EC">景点首道门票 + 景交/电瓶车（团队价统一含：五台山、悬空寺首道、云冈石窟、应县木塔、乔家大院、平遥古城、晋祠等全程景点）</li>
+        <li data-page-node-id="Ks4fiSRh7CAMKeGcqhKryD">37 座航空座椅大巴（全程专车）+ 全程优秀导游</li>
+        <li data-page-node-id="w1fGXt5B1cSBCL9uI5jzou">旅游意外险（公司统一投保）</li>
+      </ul>
+    </div>
+    <div class="feecard reim" data-page-node-id="reim-card">
+      <h4 data-page-node-id="reim-h4">山西旅行经费 · 1000 元/人（公司报销）</h4>
+      <ul data-page-node-id="reim-ul">
+        <li data-page-node-id="reim-li1">山西当地消费均可：购买伴手礼 / 特色物品、SPA 按摩、娱乐体验、美食小吃等</li>
+        <li data-page-node-id="reim-li2">保留<b data-page-node-id="reim-b1">当地消费发票 / 消费凭证 / 支付截图</b>，作为报销依据</li>
+        <li data-page-node-id="reim-li3">回程后统一提交报销：1000 元/人额度内实报实销，提交方式与截止时间见群内通知</li>
+      </ul>
+    </div>
+    <div class="feecard self" data-page-node-id="AWBVfO2xMNkEmzCfo9DAOw">
+      <h4 data-page-node-id="teBKEgUj6euq7b9uH6twxE">个人自理 / 垫付</h4>
+      <ul data-page-node-id="Uye5v9UOxX2RgaHRnj7vP6">
+        <li data-page-node-id="SFdGIolDBzuUu6rjoJU03i"><b data-page-node-id="v0mVSTHizLLTW1Jg4Z8uoV">悬空寺登临票 100 元/人</b>：自愿参与；先垫付购票，回程凭购票凭证报销（9/6 07:20 自行抢票，未抢不影响行程；不占用旅行经费额度）</li>
+        <li data-page-node-id="dRziLri3wUDaWbY3P8CtKw">超出 1000 元旅行经费额度的当地个人消费（伴手礼、酒水、自费项目等）</li>
+        <li data-page-node-id="ALRLyReFe4ZHxIEQVP2B8e">注：行程外增减项目及不可抗力产生的额外费用另计</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer data-page-node-id="5lPZlFrhSDAE2qXJ5TRDJy">
+  NEW TIME · 综合管理部｜2026 年 9 月<br data-page-node-id="kICRdjuWbyKrNyvLBvdYJj">
+  行程与时刻为参考安排，如遇天气、道路施工、景区限流等情况将合理调整，以领队现场通知为准
+</footer>
+
+</div>
+</body>
+</html>
